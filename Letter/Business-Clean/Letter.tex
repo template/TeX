@@ -1,0 +1,84 @@
+\documentclass[fontsize=10pt, version=last, foldmarks=true,foldmarks=bTP, 
+version=last, BCOR=-18.9mm,refline=narrow, enlargefirstpage=true
+]{scrlttr2} 
+
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[ngerman, num]{isodate}
+\usepackage{blindtext}
+%Schriftfamilie Helvetica
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Diese Datei enthält die Informationen fürs Layout!
+\input{style.sty}
+
+% Gewünschtes Signet (Farbdruck oder SW) einfach ein-, bzw. auskommentieren.
+%\firsthead{\includegraphics[height=16mm]{HEAD.pdf}}
+% Vollständige Absenderadresse
+% Absender hat 6 Parameter, je einen pro Block
+% Erzwungene Zeilenumbrüche mit \\ berücksichtigen!!!
+
+% Auch in style.sty ändern!!!
+\absender{Herr}
+{Frank Zisko}
+{ }
+{ \\Waldweg 1\\01234 Stadt}
+{Telefon: +49 123 / 123 123-4\\ Mobil: +49 156 / 10 20 30-4}
+{frank.zisko@emailadresse.net\\}
+ 
+% Inhalte der Geschäftszeile 
+% Nur die Werte in hinteren geschweiften Klammern verändern!
+\ihrezeichen{012345.001.01}
+\unserezeichen{98089}
+\durchwahl{5}
+\datum{\today}
+ 
+% Inhalt der Betreffszeile
+\betreff{Ich möchte mich ausdrücken}
+
+% Signatur des Briefes (Unterschrift
+\signatur{Frank Zisko}
+
+% Empängeradresse 
+% ZeilemumbrÃŒche mit \\ erzwingen, sonst steht gesamte Adresse in einer Zeile!
+\begin{letter}{
+Empfängerfirma\\
+Große Straße 5\\ 
+% \bf nicht löschen -> PLZ und Stadt sind fett hervorgehoben!
+\bf 98765 Dorf}
+
+% Eigentlicher Briefinhalt mit Anrede und Grußformel 
+% Anrede
+\opening{Sehr geehrte Damen und Herren,}
+%Briefinhalt
+\blindtext
+
+\vspace*{5ex}
+
+\noindent
+Podeste\\
+Platz 1: Frank Zisko\\
+\noindent
+Konto: 123 123 12\\
+BLZ: 120 130 140\\
+
+
+% Grußformel
+\closing{Mit freundlichen Grüßen}
+% Signatur wird automatich hier eingefÃŒgt!
+
+% Anlagen
+% Anlagen durch Zeilenumbruch (\\) separieren! Alternativ kann der auskommentierte KOMA-Script-Befehl fÃŒr den Anhang verwendet werden.
+% Jedoch stimmt die Ausgabe nicht mit den Anforderungen des CD ÃŒberein. Eventuell unterstÃŒtzen spÃ€tere KOMA-Versionen dieses Problem.
+%\anlagen{Anlage1\\Anlage2...}
+%%\encl{Anlage1\\Anlage2...}
+
+\end{letter} 
+
+%
+% Hier könnten weitere Inhalte eingefügt werden, z.B. die Anlagen!
+% 
+
+\end{document} 

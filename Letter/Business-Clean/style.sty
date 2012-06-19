@@ -1,0 +1,71 @@
+\daymonthsepgerman{} 
+\monthyearsepgerman{}{}
+
+\renewcaptionname{ngerman}{\enclname}{Anlage(n)}
+
+\setlength{\textwidth}{160.9mm}
+ 
+\def\briefkopf{\fontsize{7pt}{9pt}\selectfont}
+\def\briefkopfname{\vskip 12pt \hskip -10.4pt \bf \fontsize{10pt}{13pt}\selectfont}
+\def\briefkopfspace{\vskip 6pt \hskip -10.3pt}
+\def\zweib{\fontsize{10pt}{13pt}\selectfont}
+
+\newcommand {\ihrezeichen} [1] {\setkomavar{ihrezeichen}{#1}}
+\newcommand {\unserezeichen} [1] {\setkomavar{unserezeichen}{#1}}
+\newcommand {\durchwahl} [1] {\setkomavar{durchwahl}{#1}}
+\newcommand {\datum} [1] {\setkomavar{date}{#1}}
+\newcommand {\anlagen} [1] { \vskip 13pt \hskip -10.3pt {\bf Anlage(n)}\\#1}
+\newcommand {\absender} [6] {\setkomavar{location}{\briefkopf 
+#1
+% Name hervorgehoben
+{\briefkopfname #2}
+\briefkopfspace
+#3
+\briefkopfspace
+#4
+\briefkopfspace
+#5
+\briefkopfspace
+#6} {}}
+\newcommand {\betreff} [1] { \setkomavar{subject}{#1}}
+\newcommand {\signatur} [1] { \setkomavar{signature}{#1}}
+
+\renewcommand*{\raggedsignature}{\raggedright}
+
+\KOMAoptions{backaddress=plain}
+
+\newkomavar*[Ihre Zeichen, Ihre Nachricht vom:]{ihrezeichen} 
+\newkomavar*[Unsere Zeichen]{unserezeichen} 
+\newkomavar*[Durchwahl	]{durchwahl}
+\setkomavar*{enclseparator}{\bf Anlage} 
+
+\begin{document} 
+
+\makeatletter
+\@setplength{tfoldmarkvpos}{105mm}
+
+\@setplength{firstheadvpos}{11mm}
+\@setplength{firstheadwidth}{69.3mm}
+
+\@setplength{lochpos}{18mm}
+\@setplength{locwidth}{49mm}
+\@setplength{locvpos}{42.4mm}
+\@setplength{locheight}{137pt}
+
+\@setplength{toaddrvpos}{45mm}
+\@setplength{toaddrhpos}{24.1mm}
+\@setplength{toaddrheight}{26mm}
+
+\@setplength{refvpos}{99mm}
+\@setplength{refwidth}{136.4mm}
+\@setplength{refhpos}{24.1mm}
+\@setplength{refaftervskip}{10mm}
+
+\@setplength[2]{subjectaftervskip}{\baselineskip}
+
+\@setplength[3]{sigbeforevskip}{\baselineskip}
+
+\@addtoplength[-1]{locvpos}{7pt}
+\makeatother
+
+\setkomavar{backaddress}{\fontsize{5.5pt}{10pt}\selectfont Frank Zisko, Waldweg 1, 01234 Stadt} {}
