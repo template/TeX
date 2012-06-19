@@ -1,0 +1,26 @@
+\input{include/docinfo}		% Informations about the author.
+\input{include/header} 		% Packages and config.
+%
+%
+\begin{document}
+%
+	\input{include/doctitle} % Make title from 'docinfo'.
+	%
+	\begin{abstract}
+		\input{content/00_Abstract}
+		\keywords{\docplainkeywords}
+	\end{abstract}
+	%
+	\input{content/01_Introduction}
+	\input{content/02_RelatedWork}
+	\input{content/03_MainPart}
+	\input{content/04_Summary}
+	%
+	%\nocite{*} % Show uncited entries.
+	\bibliographystyle{style/splncs03} % Why not alpha?!
+	\bibliography{content/mybib}
+	%
+	\input{content/05_Statement}
+	%
+%
+\end{document}

@@ -1,0 +1,48 @@
+\documentclass{style/llncs}
+\usepackage[utf8]{inputenc} %Universal/Linux coding.
+%\usepackage[ansi]{inputenc} %Windows coding.
+%\usepackage[ansinew]{inputenc} %Newer windows coding.
+%\usepackage[applemac]{inputenc} %MacOS coding.
+%\usepackage[latin1]{inputenc} %Standart & Windows coding.
+\usepackage[ngerman]{babel}		% German headings.
+\usepackage[T1]{fontenc}		% German typesetting.
+%
+\usepackage{graphicx}			% Import graphics in document.
+\usepackage{subfigure}			% Subfigures in a figure.
+\usepackage{amsmath, amsfonts, amssymb, amsxtra} % Mathematical symbols.
+%\usepackage{lineno}				% Line numbers.
+\usepackage{lmodern}			% Better font encoding.
+\usepackage{textcomp}			% tc (Text Companion) fonts.
+%\usepackage{tabularx}			% Another mode for \begin{tabular} .. \end{tabular}
+\usepackage{listings}			% For a replacement of "\verb|Text-here|".
+\usepackage{microtype}			% Margin alignment, prettier gray.
+%\usepackage{multirow}			% Multiple rows in tables and colums.
+\usepackage{blindtext}			% Blindtext to test style and layout.
+%
+%
+% Must be at least in header!
+\usepackage[%
+	pdftitle={\doctitle}, % Meta title.
+	pdfauthor={\docauthor}, % Meta author.
+	pdfcreator={\docauthor}, % Meta creator.
+	pdfproducer={\docauthor}, % Meta producer.
+	pdfsubject={\docsubject}, % Meta subject.
+	pdfkeywords={\dockeywords}, % Meta tags/keywords.
+	%pdftex=true,
+	%hidelinks, % Doesn't work...
+	pdfborder={0 0 0}, % Border. Write black links without any border.
+	%linkbordercolor={1 0 1},
+	%citebordercolor={1 1 0},
+	%urlbordercolor={0 1 1},
+	%colorlinks=true,
+	%linkcolor=black,
+	%filecolor=black,
+	%urlcolor=black,
+	%citecolor=black,
+	%bookmarks=true,
+	pdffitwindow=true, % PDF viewer setting.
+	%pdftoolbar=false, % PDF viewer setting.
+	%pdfmenubar=false, % PDF viewer setting.
+	pdfstartview=FitH % PDF viewer setting.
+]{hyperref} % Links in document for toc, footnotes, references and citations.
+%
