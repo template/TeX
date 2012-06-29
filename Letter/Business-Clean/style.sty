@@ -10,12 +10,22 @@
 \def\briefkopfspace{\vskip 6pt \hskip -10.3pt}
 \def\zweib{\fontsize{10pt}{13pt}\selectfont}
 
+\newcommand {\sendername} [1] {\setkomavar{sendername}{#1}}
+\newcommand {\senderzusatz} [1] {\setkomavar{senderzusatz}{#1}}
+\newcommand {\senderstrasse} [1] {\setkomavar{senderstrasse}{#1}}
+\newcommand {\senderplz} [1] {\setkomavar{senderplz}{#1}}
+\newcommand {\senderort} [1] {\setkomavar{senderort}{#1}}
+\newcommand {\senderland} [1] {\setkomavar{senderland}{#1}}
+\newcommand {\senderphone} [1] {\setkomavar{senderphone}{#1}}
+\newcommand {\senderfax} [1] {\setkomavar{senderfax}{#1}}
+\newcommand {\senderemail} [1] {\setkomavar{senderemail}{#1}}
+
 \newcommand {\ihrezeichen} [1] {\setkomavar{ihrezeichen}{#1}}
 \newcommand {\unserezeichen} [1] {\setkomavar{unserezeichen}{#1}}
 \newcommand {\durchwahl} [1] {\setkomavar{durchwahl}{#1}}
 \newcommand {\datum} [1] {\setkomavar{date}{#1}}
 \newcommand {\anlagen} [1] { \vskip 13pt \hskip -10.3pt {\bf Anlage(n)}\\#1}
-\newcommand {\absender} [6] {\setkomavar{location}{\briefkopf 
+\newcommand {\absender} [6] {\setkomavar{location}{\briefkopf
 #1
 % Name hervorgehoben
 {\briefkopfname #2}
